@@ -19,6 +19,6 @@ jobs:
           vars: |
             EMAIL_API_TOKEN
           preCommands: yarn install
-          command: deploy --env production
+          command: deploy --name cloudflare-email
         env:
           EMAIL_API_TOKEN: ${{ secrets.EMAIL_API_TOKEN }}

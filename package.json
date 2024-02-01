@@ -9,7 +9,7 @@
 		"url": "https://github.com/blancsoft/cloudflare-email.git"
 	},
 	"scripts": {
-		"deploy": "wrangler deploy --env production",
+		"deploy": "wrangler deploy --name cloudflare-email",
 		"start": "wrangler dev"
 	},
 	"devDependencies": {
