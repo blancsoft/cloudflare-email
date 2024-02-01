@@ -16,7 +16,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          secrets: |
+          vars: |
             EMAIL_API_TOKEN
           preCommands: yarn install
           command: deploy --env production
