@@ -1,20 +1,22 @@
 {
-  "name": "cloudflare-email",
-  "version": "0.0.1",
-  "private": true,
-	"files": ["src/schema"],
+	"name": "cloudflare-email",
+	"version": "0.0.1",
+	"private": true,
+	"files": [
+		"src/schema"
+	],
 	"repository": {
 		"url": "https://github.com/blancsoft/cloudflare-email.git"
 	},
 	"scripts": {
-    "deploy": "wrangler publish --env production",
-    "start": "wrangler dev"
-  },
-  "devDependencies": {
-    "@cloudflare/workers-types": "^4.20230419.0",
-    "itty-router": "^4.0.9",
-    "prettier": "^2.8.8",
-    "typescript": "^5.0.4",
-    "wrangler": "^3.0.0"
-  }
+		"deploy": "wrangler deploy --env production",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20230419.0",
+		"itty-router": "^4.0.9",
+		"prettier": "^2.8.8",
+		"typescript": "^5.0.4",
+		"wrangler": "^3.0.0"
+	}
 }
