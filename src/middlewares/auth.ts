@@ -7,13 +7,13 @@ const AuthMiddleware = (request: Request, env: Env) => {
 	const token = request.headers.get('Authorization');
 
 	// Strict check for token existence
-	if (!env.TOKEN || env.TOKEN.length === 0) {
-		return new Response('You must set the TOKEN environment variable.', {
+	if (!env.EMAIL_API_TOKEN || env.EMAIL_API_TOKEN.length === 0) {
+		return new Response('You must set the EMAIL_API_TOKEN environment variable.', {
 			status: 401,
 		});
 	}
 
-	if (token !== env.TOKEN) {
+	if (token !== env.EMAIL_API_TOKEN) {
 		return new Response('Unauthorized', { status: 401 });
 	}
 };

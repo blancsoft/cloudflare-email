@@ -1,3 +1,3 @@
 interface Env {
-	TOKEN: string;
+	EMAIL_API_TOKEN: string;
 }
